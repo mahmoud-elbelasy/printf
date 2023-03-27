@@ -1,9 +1,12 @@
 #include "main.h"
+#include <stdarg.h>
+
 /**
  * _printf - function that act like printf function
  * @format: the object that will be print
  * Return: ALways 0
  */
+
 int _printf(char *format, ...)
 {
 	char *p;
