@@ -2,8 +2,8 @@
 #include <stdarg.h>
 /**
  * handle_decimal_d - print an integer num
- * @the arguments list
- * @ptr: a pointer 
+ * @arg: the arguments list
+ * @ptr: a pointer
  * Return (void)
  */
 void handle_decimal_d(va_list arg, int *ptr)
