@@ -45,6 +45,11 @@ int get_print(const char *format, va_list arg)
 					_putchar('%');
 					n++;
 					break;
+				case 'd':
+					handle_decimal_d(arg, &n);
+					n++;
+					break;
+
 			}
 			flag = 0;
 		}
