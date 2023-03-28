@@ -48,6 +48,10 @@ int get_print(const char *format, va_list arg)
 					handle_decimal_d(arg, &n);
 					n++;
 					break;
+				case 'i':
+					handle_decimal_d(arg, &n);
+					n++;
+					break;
 			}
 			flag = 0;
 		}
