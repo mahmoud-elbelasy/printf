@@ -16,8 +16,7 @@
 
 int get_print(const char *format, va_list arg)
 {
-	int flag = 0;
-	int n = 0;
+	int flag = 0, n = 0;
 
 	while (*format)
 	{
@@ -47,9 +46,10 @@ int get_print(const char *format, va_list arg)
 					break;
 				case 'd':
 					handle_decimal_d(arg, &n);
-					n++;
 					break;
-
+				case 'i':
+					handle_decimal_d(arg, &n);
+					break;
 			}
 			flag = 0;
 		}

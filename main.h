@@ -8,6 +8,6 @@ int get_print(const char *format, va_list arg);
 void handle_char(va_list arg, int *ptr);
 void handle_str(va_list arg, int *ptr);
 void handle_decimal_d(va_list arg,int *ptr);
-void handle_decimal_i(va_list arg,int *ptr);
-void handle_the_rec(int n);
+void handle_the_rec(int n, int *ptr);
+
 #endif /* MAIN_H */
