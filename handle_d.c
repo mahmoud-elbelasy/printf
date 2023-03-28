@@ -4,7 +4,8 @@
  * handle_decimal_d - print an integer num
  * @arg: the arguments list
  * @ptr: a pointer
- * Return (void)
+ *
+ * Return: (void)
  */
 void handle_decimal_d(va_list arg, int *ptr)
 {
