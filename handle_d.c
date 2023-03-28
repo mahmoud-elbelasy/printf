@@ -32,6 +32,7 @@ void handle_decimal_d(va_list arg, int *ptr)
 	if (num < 0)
 	{
 		_putchar('-');
+		*ptr += 1;
 		num = -num;
 	}
 	if (num >= 10)
