@@ -12,8 +12,8 @@ int main(void)
 {
     int len, len2;
 
-	len =  _printf("%s\n", NULL);
-	len2 =  printf("%s\n", NULL);
+	len =  _printf(NULL);
+	len2 =  printf(NULL);
 
     _printf("Length:[%d]\n", len);
     _printf("Length:[%d]\n", len2);

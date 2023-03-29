@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stddef.h>
 
 /**
  * get_print - the function resposible for handle printing
@@ -17,6 +18,9 @@
 int get_print(const char *format, va_list arg)
 {
 	int flag = 0, n = 0;
+
+	if (format == NULL)
+		return (-1);
 
 	while (*format)
 	{
