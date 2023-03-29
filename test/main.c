@@ -12,11 +12,11 @@ int main(void)
 {
     int len, len2;
 
-	len =  _printf(NULL);
-	len2 =  printf(NULL);
+	len =   _printf("hello %");
+	len2 =   printf("hello %");
 
-    _printf("Length:[%d]\n", len);
-    _printf("Length:[%d]\n", len2);
+    printf("Length:[%d]\n", len);
+    printf("Length:[%d]\n", len2);
 /*
 	len =  _printf("%d, %i\n", -762534, -762534);
 	len2 = printf("%d, %i\n", -762534, -762534);

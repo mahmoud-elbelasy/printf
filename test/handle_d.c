@@ -24,6 +24,7 @@ void handle_the_rec(int n, int *ptr)
  *
  * Return: (void)
  */
+
 void handle_decimal_d(va_list arg, int *ptr)
 {
 	int num;

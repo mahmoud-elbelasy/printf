@@ -63,5 +63,8 @@ int get_print(const char *format, va_list arg)
 		}
 		format++;
 	}
+	if (flag)
+		return (-1);
+
 	return (n);
 }
