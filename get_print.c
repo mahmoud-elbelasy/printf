@@ -50,6 +50,10 @@ int get_print(const char *format, va_list arg)
 				case 'i':
 					handle_decimal_d(arg, &n);
 					break;
+				default:
+					_putchar('%');
+					_putchar(*format);
+					n += 2;
 			}
 			flag = 0;
 		}
