@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * _printf - function that act like printf function
@@ -12,6 +13,9 @@ int _printf(const char *format, ...)
 {
 	va_list arg;
 	int count = 0;
+	
+	if (format == NULL)
+		return (-1);
 
 	va_start(arg, format);
 

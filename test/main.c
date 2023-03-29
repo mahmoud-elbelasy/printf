@@ -1,4 +1,5 @@
 #include <limits.h>
+
 #include <stdio.h>
 #include "main.h"
 
@@ -12,8 +13,8 @@ int main(void)
 {
     int len, len2;
 
-	len =   _printf("hello %");
-	len2 =   printf("hello %");
+	len =   _printf(NULL);
+	len2 =   printf(NULL);
 
     printf("Length:[%d]\n", len);
     printf("Length:[%d]\n", len2);
