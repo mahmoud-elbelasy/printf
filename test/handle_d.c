@@ -37,7 +37,7 @@ void handle_decimal_d(va_list arg, int *ptr)
 		num = -num;
 	}
 	if (num >= 10)
-		handle_the_rec(num / 10, &(*ptr));
+		handle_the_rec(num / 10, ptr);
 
 	_putchar (num % 10 + '0');
 	*ptr += 1;

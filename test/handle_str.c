@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stddef.h>
+
 /**
  * handle_str - print a str
  * @arg: the arguments list
@@ -12,6 +13,9 @@
 void handle_str(va_list arg, int *ptr)
 {
 	char *str;
+
+	if (ptr == NULL)
+		return;
 
 	str = va_arg(arg, char*);
 	if (str == NULL)
